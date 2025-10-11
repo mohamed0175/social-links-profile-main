@@ -1,0 +1,36 @@
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(assets/fonts/static/Inter-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, button {
+    all: unset;
+}
+
