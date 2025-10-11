@@ -1,9 +1,11 @@
 :root {
     --Green: hsl(75, 94%, 57%);
+    --Dark-green: hsl(75, 73%, 48%);
     --White: hsl(0, 0%, 100%);
     --Grey-700: hsl(0, 0%, 20%);
     --Grey-800: hsl(0, 0%, 12%);
     --Grey-900: hsl(0, 0%, 8%);
+    font-size: 16px;
 }
 
 @font-face {
@@ -28,9 +30,82 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--White);
+    font-family: "Inter";
+}
+
+html, body {
+    height: 100%;
 }
 
 a, button {
     all: unset;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Grey-900);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Grey-800);
+    padding: 3rem;
+    border-radius: 15px;
+    margin: 0 1.5rem;
+    width:30rem;
+}
+
+.photo {
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    width: 37%;
+}
+
+.title {
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+}
+
+.address {
+    color: var(--Green);
+    font-weight: 600;
+    font-size: 1.18rem;
+    margin-bottom: 2rem;
+}
+
+.content {
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--Grey-700);
+    width: 100%;
+    text-align: center;
+    margin: 0.7rem;
+    padding: 1rem;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: var(--Green);
+    color: black;
+}
+
+button:active {
+    background-color: var(--Dark-green);
+}
+
+@media(max-width: 550px) {
+    :root {
+        font-size: 11px;
+    }
+}
