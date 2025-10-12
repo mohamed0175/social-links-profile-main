@@ -95,12 +95,12 @@ a, button {
     font-weight: 600;
 }
 
-button:hover {
+.button:hover {
     background-color: var(--Green);
     color: black;
 }
 
-button:active {
+.button:active {
     background-color: var(--Dark-green);
 }
 
